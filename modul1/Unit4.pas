@@ -20,7 +20,7 @@ type
     BitBtn3: TBitBtn;
     Chart1: TChart;
     Series1: TPieSeries;
-    procedure StringGrid1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
   private
@@ -36,7 +36,7 @@ implementation
 
 {$R *.dfm}
 
-procedure TForm1.StringGrid1Click(Sender: TObject);
+procedure TForm1.FormCreate(Sender: TObject);
 begin
  StringGrid1.Cells[0,0]:='JENIS PENYAKIT';
  StringGrid1.Cells[0,1]:='COVID 19';

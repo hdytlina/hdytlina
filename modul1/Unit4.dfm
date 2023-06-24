@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 569
-  Top = 262
+  Left = 735
+  Top = 44
   Width = 761
   Height = 339
   Caption = 'Form1'
@@ -65,7 +65,12 @@ object Form1: TForm1
     Width = 257
     Height = 120
     TabOrder = 3
-    OnClick = StringGrid1Click
+    ColWidths = (
+      64
+      64
+      64
+      64
+      64)
   end
   object BitBtn1: TBitBtn
     Left = 32
