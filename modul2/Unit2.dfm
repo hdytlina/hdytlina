@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 749
-  Top = 125
+  Left = 234
+  Top = 146
   Width = 623
   Height = 480
   Caption = 'MENAMPILKAN DATA DIGRAFIK DAN STRINGGRID'
@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -57,7 +58,6 @@ object Form1: TForm1
     Width = 105
     Height = 21
     TabOrder = 1
-    Text = 'Edit1'
   end
   object ComboBox2: TComboBox
     Left = 136
@@ -79,6 +79,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'ADD DATA'
     TabOrder = 3
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 136
@@ -87,12 +88,14 @@ object Form1: TForm1
     Height = 25
     Caption = 'VIEW GRAFIK'
     TabOrder = 4
+    OnClick = Button2Click
   end
   object StringGrid1: TStringGrid
     Left = 280
     Top = 16
     Width = 320
     Height = 120
+    RowCount = 4
     TabOrder = 5
   end
   object Chart1: TChart
