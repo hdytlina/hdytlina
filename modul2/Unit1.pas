@@ -36,6 +36,8 @@ type
     Button2: TButton;
     Button3: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,11 +57,11 @@ var
    b1,b2,b3,b4,b5 : Real;
    grade,ket :string;
 begin
-   nil1 := StrToFloat(edtnilai11.text);
-   nil2 := StrToFloat(edtnilai12.text);
-   nil3 := StrToFloat(edtnilai13.text);
-   nil4 := StrToFloat(edtnilai14.text);
-   nil5 := StrToFloat(edtnilai15.text);
+   nil1 := StrToFloat(edtnilai1.text);
+   nil2 := StrToFloat(edtnilai2.text);
+   nil3 := StrToFloat(edtnilai3.text);
+   nil4 := StrToFloat(edtnilai4.text);
+   nil5 := StrToFloat(edtnilai5.text);
 
    b1 := strtofloat(ebobot1.Text)/100;
    b2 := strtofloat(ebobot2.Text)/100;
@@ -80,9 +82,32 @@ begin
    if (hasil >= 50) then
    grade:='D'
    else
-   grade:='E;;
+   grade:='E';;
 
-   if ((garde='A')or(grade='B')or(grade='c)) then
+   if ((grade='A')or(grade='B')or(grade='C')) then
+     ket:='LULUS'
+     else
+     ket:='TIDAK LULUS';
+     etotal.Text := floattostr(hasil);
+     egrade.text := grade;
+     eket.text := ket;
+
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+   edtnilai1.Text :='0';
+   edtnilai2.Text :='0';
+   edtnilai3.Text :='0';
+   edtnilai4.Text :='0';
+   edtnilai5.Text :='0';
+   etotal.Text :='';
+   egrade.Text :='';
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+Application.Terminate;
 end;
 
 end.

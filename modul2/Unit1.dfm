@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 795
-  Top = 69
+  Left = 804
+  Top = 286
   Width = 533
   Height = 455
   Caption = 'LATIHAN2'
@@ -136,7 +136,7 @@ object Form1: TForm1
     Top = 72
     Width = 73
     Height = 33
-    Caption = 'Panel2'
+    Caption = 'Nilai'
     TabOrder = 1
   end
   object Panel3: TPanel
@@ -144,7 +144,7 @@ object Form1: TForm1
     Top = 72
     Width = 73
     Height = 33
-    Caption = 'Panel3'
+    Caption = 'Bobot'
     TabOrder = 2
   end
   object edtnilai1: TEdit
@@ -254,6 +254,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'HAPUS'
     TabOrder = 17
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 368
@@ -262,5 +263,6 @@ object Form1: TForm1
     Height = 25
     Caption = 'KELUAR'
     TabOrder = 18
+    OnClick = Button3Click
   end
 end
