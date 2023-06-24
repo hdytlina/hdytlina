@@ -2,7 +2,7 @@ program LatihanGrafik;
 
 uses
   Forms,
-  Unit2 in 'Unit2.pas' {Form1};
+  Unit3 in 'Unit3.pas' {Form1};
 
 {$R *.res}
 
